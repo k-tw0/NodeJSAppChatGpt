@@ -1,0 +1,4 @@
+#lista-datos {
+    max-height: 400px; /* altura máxima de 400 píxeles */
+    overflow-y: auto; /* agregar scroll vertical si se supera la altura máxima */
+}

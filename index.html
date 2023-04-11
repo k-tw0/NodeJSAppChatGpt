@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi página con menú lateral</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container is-fluid">
+          <div class="columns">
+            <div class="column is-2">
+              <!-- Aquí irá el menú lateral -->
+
+              <div class="menu">
+                <div class="menu-list" class="column">
+                   <p class="menu-label">
+                      Preguntas
+                    </p>
+                    <div id="lista-datos-contenedor">
+                      <ul id="lista-datos">
+                        <!-- elementos de la lista -->
+                      </ul>
+                    </div>
+                </div>
+
+                <p class="menu-label">
+                  Webs
+                </p>
+                <ul class="menu-list">
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#">Acerca de</a></li>
+                  <li><a href="#">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="column">
+                <h1>Respuesta</h1>
+              <!-- Aquí irá el contenido de la página -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="container is-fluid">
+          <div class="columns">
+            <div class="column">
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                      <input id="dato" class="input" type="text" placeholder="Ingresa tu búsqueda">
+                    </div>
+                    <div class="control">
+                      <a id="enviar" class="button is-info">
+                        Buscar
+                      </a>
+                    </div>
+                </div>
+                <div id="resultado"></div>
+              <!-- Aquí irá el input -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
